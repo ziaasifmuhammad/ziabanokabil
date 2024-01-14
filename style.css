@@ -1,0 +1,359 @@
+@import url('https://fonts.googlapis.com/css2 family=Poppins:wght(300,400,500,600,700,800,900 & disply=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    
+    color: #ededed;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: yellowgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100%;
+}
+.logo{
+    position: relative;
+    font-size: 28px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00abf0;
+    animation:showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+.navbar a:hover,.navbar a active{
+    color: #00abf0;
+
+}
+.home{
+    display: flex;
+    background: url("background1.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+}
+.home-contant{
+max-width: 600px;
+}
+.home-contant h1{
+    font-size: 56px;
+    font-weight: 700;
+
+}
+.home-contant h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+    line-height: 1.2;
+}
+.home-contant p{
+    font-size: 16px;
+    margin: 20px 0 10px;
+}
+.home-contant.btn-box{
+    display:flex ;
+    justify-content: space-between;
+    width: 345px;
+    height: 60px;
+    background: yellowgreen;
+}
+.btn-box a{ 
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 1px solid #00abf0;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.btn-box a:hover{
+    color:#7cdf6f
+}
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+.btn-box a:nth-child(2):hover{
+    color: #081b29;
+}
+.btn-box a:nth-child(2)::before{
+    background: #00abf0;
+}
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100;
+    background:#081b29;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box a:hover::before{
+    width: 100%;
+}
+.home-section{
+    position: absolute;
+    bottom: 40px;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-section a{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background: transparent;
+    border: 1px solid #00abf0;
+    border-radius: 50%;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+.home-section a ::before{
+    contain: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:#00abf0;
+    z-index:-1;
+    transition: 0.5s;
+}
+.home-section a :hover::before{
+    width : 100%;
+
+}
+
+@keyframes showRight{
+    100%{
+        width: 0;
+    }
+}
+.about{
+    display: flex;
+    background-color: rgb(190, 187, 187);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+}
+.about-me{
+ max-width: 800;   
+}
+.about-me h2{
+    font-size: 38px;
+    font-weight: 700;
+    color: #00abf0;
+    line-height: 1.5;
+    text-align: center;
+    align-items: center;
+    color: black;
+}
+.about-me p{
+    font-size: 18px;
+    margin: 20px 0 10px;
+    color: black;
+}
+.about-me img{
+    float: right;
+    width: 660px;
+    height: 400px;
+    
+}
+.section{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+}
+.section-ser{
+    max-width:700;
+}
+.section-ser h2{
+    font-size: 46px;
+    font-weight: 700;
+}
+.section-ser p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.section-ser h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+    line-height: 1.5;
+}
+.section-ser.assu{
+    margin-left: 30px;
+    max-width: 400;
+    color: #081b29;
+}
+.section-ser.assu p{
+    font-size: 18px;
+    margin: 20px 0 10px;
+    color: black;
+}
+.section-ser ul{
+    display: inline;
+    margin-right: 30px;
+    position: relative;
+    line-height: 1.5;
+}
+.section-ser img{
+   float: right;
+   width: 400px;
+   height: 250px; 
+}
+.section-ser ul li{
+    font-size: 18px;
+    padding-right: 30px;
+    color: #081b29;
+    line-height: 1.8;
+
+}
+.tex{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+    color: #081b29;
+    margin-top: 20px; 
+    line-height: 1.5;
+}
+.tax-ser{
+    max-width: 500;
+    color: #081b29;
+    line-height: 1.5;
+}
+.tax-ser.number{
+    font-weight: 300;
+    font-size: 20px;
+    color:#00abf0;
+    line-height: 1.5;
+    padding-top: 10px 0;
+    left: 0;
+    top:20px;
+    padding-top: 0 20px;
+}
+.tax-ser.number p{
+    font-size: 20px;
+    font-weight: 300;line-height: 1.5;
+    margin-top: 30px;
+    top: 20px;
+}
+.tax-ser h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+    line-height: 1.5;
+    margin: 34px;
+}
+
+.tax-ser p{
+    position: relative;
+    margin-left: 30px;
+    align-items:center;
+    line-height: 2;
+}
+.tax-ser ul li{
+ font-size: 18px;
+ margin-left:80px;
+ line-height: 2;  
+ color: #081b29; 
+}
+.tax-ser img{
+    float: right;
+    bottom : 120pxpx;
+    margin-right:0 50px;
+}
+.corporate{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+    color: #081b29;
+    margin-top: 5px; 
+    line-height: 1.5;
+}
+.corporate-com{
+    max-width: 500;
+    color: #081b29;
+    line-height: 1.5;
+}
+.corporate-com p{
+    font-size: 20px;
+    font-weight: 300;line-height: 1.5;
+    top: 20px;
+}
+.corporate-com h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+    line-height: 1.5;
+    margin: 34px;
+}
+.corporate-com p{
+    margin-left: 30px;
+    align-items:center;
+    line-height: 2;
+}
+.corporate-com ul li{
+    padding-top: 20px;
+ font-size: 18px;
+ margin-left:80px;
+ line-height: 2;  
+ color: #081b29; 
+}
+.contact{
+    position: relative;
+    display: flex;
+    top: 750px;
+    flex-wrap: wrap;
+    
+}
